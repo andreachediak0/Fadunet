@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - name: Instalar Android SDK
         run: sdkmanager "platforms;android-25" "build-tools;25.0.3"
 
